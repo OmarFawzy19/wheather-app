@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+    
+        <!-- Weather -->
+        <div class="container mt-5">
+            <div class="d-flex flex-row justify-content-center align-items-center">
+                
+                <div class="weather__card">
+                    <div class="input-box">
+                        <input type="text" id="userInput" placeholder="Enter a country?">
+                        <button onclick="returnText()">Submit</button>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center align-items-center">
+                        <div class="p-3">
+                            <h2 id="temperature">15&deg;C</h2>
+                        </div>
+                        <div class="p-3">
+                            <img id="weatherIcon" src="https://svgur.com/i/oKG.svg" alt="weather icon">
+                        </div>
+                        <div class="p-3">
+                            <h5 id="time">Tuesday, 10 AM</h5>
+                            <h3 id="location">San Francisco, USA</h3>
+                            <span id="weatherDescription" class="weather__description">Mostly Cloudy</span>
+                            <div>Humidity: <span id="humidity">60%</span><span> %</span></div>
+                            <div>Sunrise: <span id="sunrise">6:00 AM</span></div>
+                            <div>Sunset: <span id="sunset">7:00 PM</span></div>
+                        </div>
+                    </div>
+                    <div class="weather__status d-flex flex-row justify-content-center align-items-center mt-3">
+                        <div class="p-4 d-flex justify-content-center align-items-center">
+                            <img src="https://svgur.com/i/oHw.svg" alt="precipitation icon">
+                            <span id="precipitation">10%</span>
+                        </div>
+                        <div class="p-4 d-flex justify-content-center align-items-center">
+                            <img src="https://svgur.com/i/oH_.svg" alt="pressure icon">
+                            <span id="pressure">0.53 mB</span>
+                        </div>
+                        <div class="p-4 d-flex justify-content-center align-items-center">
+                            <img src="https://svgur.com/i/oKS.svg" alt="wind speed icon">
+                            <span id="windSpeed">10 km/h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Weather Forecast -->
+         <div class="container">
+        <div class="weather__forecast d-flex flex-row justify-content-center align-items-center mt-3">
+            <!-- Forecast 1 -->
+            <div id="forecast1" class="p-4 d-flex flex-column justify-content-center align-items-center">
+                <span id="forecastDay1">Mon</span>
+                <img id="forecastIcon1" src="https://svgur.com/i/oKG.svg" alt="forecast icon 1">
+                <span id="forecastTemp1">Max: 18&deg;C / Min: 12&deg;C</span>
+                <span id="forecastDesc1">Sunny</span>
+            </div>
+            <!-- Repeat for all forecast days -->
+            <div id="forecast2" class="p-4 d-flex flex-column justify-content-center align-items-center">
+                <span id="forecastDay2">Tue</span>
+                <img id="forecastIcon2" src="https://svgur.com/i/oKG.svg" alt="forecast icon 2">
+                <span id="forecastTemp2">Max: 20&deg;C / Min: 15&deg;C</span>
+                <span id="forecastDesc2">Cloudy</span>
+            </div>
+            <!-- Add more forecast blocks as needed -->
+            <div id="forecast3" class="p-4 d-flex flex-column justify-content-center align-items-center">
+                <span id="forecastDay3">Wed</span>
+                <img id="forecastIcon3" src="https://svgur.com/i/oKG.svg" alt="forecast icon 3">
+                <span id="forecastTemp3">Max: 22&deg;C / Min: 16&deg;C</span>
+                <span id="forecastDesc3">Partly Cloudy</span>
+            </div>
+            <div id="forecast4" class="p-4 d-flex flex-column justify-content-center align-items-center">
+                <span id="forecastDay4">Thu</span>
+                <img id="forecastIcon4" src="https://svgur.com/i/oKG.svg" alt="forecast icon 4">
+                <span id="forecastTemp4">Max: 23&deg;C / Min: 18&deg;C</span>
+                <span id="forecastDesc4">Rainy</span>
+            </div>
+            <div id="forecast4" class="p-4 d-flex flex-column justify-content-center align-items-center">
+                <span id="forecastDay5">Fri</span>
+                <img id="forecastIcon5" src="https://svgur.com/i/oKG.svg" alt="forecast icon 4">
+                <span id="forecastTemp5">Max: 23&deg;C / Min: 18&deg;C</span>
+                <span id="forecastDesc5">Rainy</span>
+            </div>
+            <div id="forecast4" class="p-4 d-flex flex-column justify-content-center align-items-center">
+                <span id="forecastDay6">Sat</span>
+                <img id="forecastIcon6" src="https://svgur.com/i/oKG.svg" alt="forecast icon 4">
+                <span id="forecastTemp6">Max: 23&deg;C / Min: 18&deg;C</span>
+                <span id="forecastDesc6">Rainy</span>
+            </div>
+            <div id="forecast4" class="p-4 d-flex flex-column justify-content-center align-items-center">
+                <span id="forecastDay7">Sun</span>
+                <img id="forecastIcon7" src="https://svgur.com/i/oKG.svg" alt="forecast icon 4">
+                <span id="forecastTemp7">Max: 23&deg;C / Min: 18&deg;C</span>
+                <span id="forecastDesc7">Rainy</span>
+            </div>
+        </div>
+  
+    </div>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
