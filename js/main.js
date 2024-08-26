@@ -62,7 +62,7 @@ function checkEnter(event) {
 function updateCurrentWeather(data) {
     console.log(data)
     document.getElementById('temperature').innerHTML = `${convertToCelsius(data.currentConditions.temp)}&deg;C`;
-    document.getElementById('weatherIcon').src =`../image/icon/${data.currentConditions.icon}.png`
+    document.getElementById('weatherIcon').src =`/image/icon/${data.currentConditions.icon}.png`
     document.getElementById('time').textContent = `${formattedDateTime}`;
     document.getElementById('location').textContent = `${data.address} ${data.timezone}`;
     document.getElementById('weatherDescription').textContent = data.currentConditions.conditions;
