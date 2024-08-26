@@ -16,7 +16,7 @@
                 
                 <div class="weather__card">
                     <div class="input-box">
-                        <input type="text" id="userInput" placeholder="Enter a country?">
+                        <input type="text" id="userInput" placeholder="Enter a country?" onkeydown=checkEnter(event)>
                         <button onclick="returnText()">Submit</button>
                     </div>
                     <div class="d-flex flex-row justify-content-center align-items-center">
@@ -24,7 +24,7 @@
                             <h2 id="temperature">15&deg;C</h2>
                         </div>
                         <div class="p-3">
-                            <img id="weatherIcon" src="https://svgur.com/i/oKG.svg" alt="weather icon">
+                            <img id="weatherIcon" src="./image/icon/clear-day.png">
                         </div>
                         <div class="p-3">
                             <h5 id="time">Tuesday, 10 AM</h5>
@@ -63,14 +63,14 @@
                 <span id="forecastTemp1">Max: 18&deg;C / Min: 12&deg;C</span>
                 <span id="forecastDesc1">Sunny</span>
             </div>
-            <!-- Repeat for all forecast days -->
+            
             <div id="forecast2" class="p-4 d-flex flex-column justify-content-center align-items-center">
                 <span id="forecastDay2">Tue</span>
                 <img id="forecastIcon2" src="https://svgur.com/i/oKG.svg" alt="forecast icon 2">
                 <span id="forecastTemp2">Max: 20&deg;C / Min: 15&deg;C</span>
                 <span id="forecastDesc2">Cloudy</span>
             </div>
-            <!-- Add more forecast blocks as needed -->
+            
             <div id="forecast3" class="p-4 d-flex flex-column justify-content-center align-items-center">
                 <span id="forecastDay3">Wed</span>
                 <img id="forecastIcon3" src="https://svgur.com/i/oKG.svg" alt="forecast icon 3">
